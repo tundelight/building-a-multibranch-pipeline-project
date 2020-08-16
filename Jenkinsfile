@@ -10,6 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Test Ok'
+        sh 'echo test'
       }
     }
 
