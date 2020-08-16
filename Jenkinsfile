@@ -19,5 +19,14 @@ pipeline {
       }
     }
 
+    stage('Deploy for production') {
+      steps {
+        timeout(activity: true, unit: 'MINUTES', time: 20) {
+          echo 'ok'
+        }
+
+      }
+    }
+
   }
 }
