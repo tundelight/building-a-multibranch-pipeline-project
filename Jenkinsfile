@@ -1,13 +1,10 @@
 pipeline {
     agent any
-       stage('Test') {
-      steps {
-        sh './jenkins/scripts/test.sh'
-      }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "Hello world!"'
+            }
+        }
     }
-
-  }
-  environment {
-    CI = 'true'
-  }
 }
